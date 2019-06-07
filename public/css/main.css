@@ -28,14 +28,19 @@ body {
   color: #494c4d;
   line-height: 1.25em; }
 
-.aside {
-  width: 100%;
-  height: 100%;
-  background-color: #f5f6f7;
-  background-size: cover; }
+h1, h2, h3, h4, h5, h6 {
+  color: #212325; }
 
 .main {
-  height: 2000px; }
+  height: 2000px;
+  background-color: silver; }
 
-.main-content {
-  height: 100%; }
+.aside {
+  background-color: #f5f6f7; }
+
+.content-menu {
+  padding: 0 15px; }
+
+.search {
+  padding: 20px 15px;
+  background-color: #eff1f2; }
