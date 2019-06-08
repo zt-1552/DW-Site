@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content-menu {
-  padding: 0 15px;
+  padding: 0 12px;
 }
 
 .search {
@@ -36,11 +36,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 7px;
   font-size: 18px;
   font-variant: small-caps;
-  &:after {
+    &:after {
     content: '';
     display: block;
-    width: auto;
+    width: calc(100% + 10px);
     height: 3px;
+    margin-top: 10px;
     background-color: $decor-color;
   }
 }
@@ -48,12 +49,12 @@ h1, h2, h3, h4, h5, h6 {
 .menu-nav {
   margin-top: 50px;
   & ul {
-    margin: 0;
+    margin: 12px 0 0 0;
     padding: 0;
     & li {
         list-style: none;
         text-transform: uppercase;
-        padding: 30px 0 20px 0;
+        padding: 25px 0 16px 0;
         border-bottom: 1px solid $color-underline;
         & a {
           color: $color-title;
@@ -63,5 +64,21 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
+  }
+}
+
+.info-menu {
+  margin-top: 45px;
+}
+
+.anounce {
+  margin-top: 41px;
+  border-bottom: 1px solid $color-underline;
+  & img {
+    width: 260px;
+    border-radius: 10px;
+  }
+  & p {
+    margin-top: 20px;
   }
 }
