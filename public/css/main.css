@@ -29,7 +29,8 @@ body {
   line-height: 1.25em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #212325; }
+  color: #212325;
+  font-weight: bold; }
 
 .main {
   height: 2000px;
@@ -44,3 +45,33 @@ h1, h2, h3, h4, h5, h6 {
 .search {
   padding: 20px 15px;
   background-color: #eff1f2; }
+  .search input::placeholder {
+    letter-spacing: 0.13em; }
+
+.menu-title {
+  display: inline-block;
+  padding-right: 7px;
+  font-size: 18px;
+  font-variant: small-caps; }
+  .menu-title:after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 3px;
+    background-color: #609cf5; }
+
+.menu-nav {
+  margin-top: 50px; }
+  .menu-nav ul {
+    margin: 0;
+    padding: 0; }
+    .menu-nav ul li {
+      list-style: none;
+      text-transform: uppercase;
+      padding: 30px 0 20px 0;
+      border-bottom: 1px solid #e0e3e5; }
+      .menu-nav ul li a {
+        color: #212325; }
+        .menu-nav ul li a:hover {
+          color: #609cf5;
+          text-decoration: none; }
