@@ -1,7 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  color: #494c4d;
+  color: $main-text-color;
   line-height: 1.25em;
 }
 
@@ -72,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .anounce {
-  margin-top: 41px;
+  margin-top: 20px;
   border-bottom: 1px solid $color-underline;
   & img {
     width: 260px;
@@ -80,5 +85,43 @@ h1, h2, h3, h4, h5, h6 {
   }
   & p {
     margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.button {
+  border: 2px solid $decor-color;
+  border-radius: 4px;
+  color: $decor-color;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  padding: 11px 28px;
+  margin-bottom: 10px;
+}
+
+.help {
+  margin-top: 45px;
+}
+
+.help-text {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.contact-item {
+  border-bottom: 1px solid $color-underline;
+  padding: 40px 0 20px 0;
+}
+
+.contact-item-icon {
+  font-size: 26px;
+  color: $decor-color;
+  padding-right: 30px;
+}
+.comtact-item-info {
+  & a {
+    color: $main-text-color;
   }
 }

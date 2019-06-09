@@ -20,7 +20,7 @@ gulp.task('fonts',  function(){
 });
 
 gulp.task('font-awesome',  function(){
-    return gulp.src('app/libs/font-awesome/webfonts/**/*.*')
+    return gulp.src('app/libs/fontawesome/webfonts/**/*.*')
     .pipe(gulp.dest('public/webfonts'));
 });
 
