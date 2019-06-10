@@ -4372,6 +4372,21 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 400; }
 
+/*!
+ * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  font-display: auto;
+  src: url("../webfonts/fa-brands-400.eot");
+  src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+.fab {
+  font-family: 'Font Awesome 5 Brands'; }
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -4410,10 +4425,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #212325;
   font-weight: bold; }
 
-.main {
-  height: 2000px;
-  background-color: silver; }
-
 .aside {
   background-color: #f5f6f7; }
 
@@ -4428,7 +4439,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-title {
   display: inline-block;
-  padding-right: 7px;
   font-size: 18px;
   font-variant: small-caps; }
   .menu-title:after {
@@ -4500,3 +4510,106 @@ h1, h2, h3, h4, h5, h6 {
     color: #494c4d;
     letter-spacing: 0.13em;
     line-height: 1.7em; }
+
+.button-menu {
+  font-size: 28px;
+  color: #609cf5;
+  text-align: center;
+  padding-top: 15px; }
+  .button-menu i::before {
+    display: inline-block;
+    padding: 10px; }
+
+.main {
+  padding: 0 15px; }
+
+.name-portal {
+  margin-top: 80px; }
+
+.main-title {
+  display: block; }
+  .main-title:after {
+    content: '';
+    width: auto;
+    margin-top: 10px; }
+
+.head-news {
+  border-bottom: 1px solid #e0e3e5; }
+
+.head-news-info {
+  padding-bottom: 30px; }
+
+.head-news-title {
+  font-size: 36px;
+  line-height: 1.45em;
+  margin-bottom: 0; }
+
+.head-news-description {
+  text-transform: uppercase;
+  margin-top: 2px;
+  margin-bottom: 28px; }
+
+.head-news-info-text {
+  margin-bottom: 30px; }
+
+.head-news-img img {
+  width: 100%;
+  border-radius: 7px; }
+
+.posts {
+  margin-top: 50px; }
+
+.card {
+  border: none; }
+
+.posts-title {
+  margin-bottom: 40px; }
+  .posts-title h2 {
+    font-size: 24px;
+    font-variant: normal; }
+
+.post-item {
+  margin-top: 18px;
+  border-bottom: 1px solid #e0e3e5; }
+
+.post-item-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 22px 0 25px 0; }
+
+.post-button {
+  margin-bottom: 30px; }
+
+.posts-items .post-item:nth-child(odd) {
+  padding-left: 0;
+  border-right: 1px solid #e0e3e5; }
+
+.posts-items .post-item:nth-child(even) {
+  padding-right: 0; }
+
+.card-img-top {
+  border-radius: 4px; }
+
+.posts-footer {
+  margin-top: 60px; }
+
+.button-footer {
+  font-size: 10px;
+  padding: 9px 15px; }
+
+.footer-info {
+  margin-bottom: 80px; }
+
+.footer-info-icon {
+  font-size: 42px;
+  color: #609cf5;
+  padding: 15px; }
+
+.footer-info-content {
+  padding-left: 15px; }
+  .footer-info-content span {
+    display: block;
+    padding-bottom: 22px;
+    padding-top: 0; }
+  .footer-info-content p {
+    margin: 0; }
