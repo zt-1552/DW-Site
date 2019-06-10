@@ -4587,7 +4587,13 @@ h1, h2, h3, h4, h5, h6 {
 .posts-items .post-item:nth-child(even) {
   padding-right: 0; }
 
-.card-img-top {
+.img-post {
+  transition: all 0.4s ease-out; }
+  .img-post:hover {
+    transform: scale(1.07, 1.07); }
+
+.image-card {
+  overflow: hidden;
   border-radius: 4px; }
 
 .posts-footer {
@@ -4596,6 +4602,12 @@ h1, h2, h3, h4, h5, h6 {
 .button-footer {
   font-size: 10px;
   padding: 9px 15px; }
+
+.img-post-footer {
+  border-radius: 4px;
+  transition: all 0.2s linear; }
+  .img-post-footer:hover {
+    box-shadow: 0 0 5px 5px #bbbbbb; }
 
 .footer-info {
   margin-bottom: 80px; }
@@ -4613,3 +4625,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 0; }
   .footer-info-content p {
     margin: 0; }
+
+#modal-window {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  height: 100rem;
+  background: rgba(205, 205, 205, 0.89); }
+  #modal-window img {
+    padding-top: 10%; }

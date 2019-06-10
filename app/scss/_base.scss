@@ -223,7 +223,15 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0;
 }
 
-.card-img-top {
+.img-post {
+  transition: all 0.4s ease-out;
+  &:hover {
+    transform: scale(1.07, 1.07);
+  }
+}
+
+.image-card {
+  overflow: hidden;
   border-radius: 4px;
 }
 
@@ -234,6 +242,14 @@ h1, h2, h3, h4, h5, h6 {
 .button-footer {
   font-size: 10px;
   padding: 9px 15px;
+}
+
+.img-post-footer {
+  border-radius: 4px;
+  transition: all 0.2s linear;
+  &:hover {
+    box-shadow: 0 0 5px 5px #bbbbbb;
+  }
 }
 
 .footer-info {
@@ -257,3 +273,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
   }
 }
+
+#modal-window {
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: none;
+		height: 100rem;
+		background: rgba(205, 205, 205, 0.89);
+    & img {
+      padding-top: 10%;
+    }
+	}
