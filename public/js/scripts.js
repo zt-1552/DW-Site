@@ -1,9 +1,20 @@
 ;(function($, undefined){
 
- $('#button-menu').on('click', function (){
-  console.log('Menu');
-})
+ $('#button-menu').on('click', function (e){
 
+  var  $this = $("#main");
+
+  if(!$this.hasClass('col-11')){
+    $("#aside").hide();
+    $this.addClass('col-11');
+    $this.removeClass('col-8');
+
+  } else {
+    $this.removeClass('col-11');
+    $this.addClass('col-8');
+    $("#aside").show(400);
+  }
+});
 
 $(".img-post-footer").on("click", function () { // Отображение на весь экран
   var img = $(this);
