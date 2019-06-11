@@ -4425,9 +4425,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #212325;
   font-weight: bold; }
 
+.content {
+  max-width: 1140px;
+  display: flex;
+  margin: auto;
+  position: relative; }
+
 .aside {
+  position: relative;
+  top: 0px;
+  left: 0px;
   background-color: #f5f6f7;
-  min-width: 275px; }
+  width: 285px; }
+
+.menu-swich {
+  width: 5%; }
+
+.main {
+  width: 82%;
+  padding: 0 15px; }
 
 .content-menu {
   padding: 0 12px; }
@@ -4521,9 +4537,6 @@ h1, h2, h3, h4, h5, h6 {
   .button-menu i::before {
     display: inline-block;
     padding: 10px; }
-
-.main {
-  padding: 0 15px; }
 
 .name-portal {
   margin-top: 80px; }
@@ -4620,7 +4633,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px; }
 
 .footer-info-content {
-  padding-left: 15px; }
+  padding-left: 15px;
+  padding-bottom: 30px; }
   .footer-info-content span {
     display: block;
     padding-bottom: 22px;
@@ -4639,3 +4653,12 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(205, 205, 205, 0.55); }
   #modal-window img {
     padding-top: 10%; }
+
+@media (max-width: 768px) {
+  .posts-items .post-item:nth-child(odd) {
+    padding-left: 0;
+    border-right: none; }
+  .aside {
+    display: none; }
+  .main {
+    width: 95%; } }

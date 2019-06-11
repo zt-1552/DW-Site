@@ -15,9 +15,28 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+.content {
+  max-width: 1140px;
+  display: flex;
+  margin: auto;
+  position: relative;
+}
+
 .aside {
+  position: relative;
+  top: 0px;
+  left: 0px;
   background-color: $bgc-menu;
-  min-width: 275px;
+  width: 285px;
+}
+
+.menu-swich {
+  width: 5%;
+}
+
+.main {
+  width: 82%;
+  padding: 0 15px;
 }
 
 .content-menu {
@@ -137,9 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
 //Styles for main inline-block
 
-.main {
-  padding: 0 15px;
-}
+
 
 .name-portal {
   margin-top: 80px;
@@ -266,6 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-info-content {
   padding-left: 15px;
+  padding-bottom: 30px;
   & span {
     display: block;
     padding-bottom: 22px;
@@ -292,4 +310,15 @@ h1, h2, h3, h4, h5, h6 {
 
   //Adaptive
 
-  
+  @media (max-width: 768px) {
+    .posts-items .post-item:nth-child(odd) {
+      padding-left: 0;
+      border-right: none;
+    }
+    .aside {
+      display: none;
+    }
+    .main {
+      width: 95%;
+    }
+  }
