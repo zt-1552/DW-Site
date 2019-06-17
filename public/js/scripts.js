@@ -8,12 +8,12 @@
     if ($(window).width() >= 768) {
       if(!$this.hasClass('95-pecent')){
         $this.addClass('95-pecent').css({width: '95%'});
-        $("#aside").animate({left: '-285px'}, 2000);
-        $("#aside").hide(2000);
+        $("#aside").animate({left: '-285px'}, 500);
+        $("#aside").hide(500);
 
       } else {
         $this.removeClass('95-pecent').css({width: '82%'});
-        $("#aside").show();
+        $("#aside").show(600);
         $("#aside").animate({left: '0px'}, 1000);
       }
     } else {
