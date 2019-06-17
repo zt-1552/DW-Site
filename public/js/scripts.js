@@ -3,16 +3,34 @@
  $('#button-menu').on('click', function (){
 
   var  $this = $("#main");
+  var $aside = $("#aside");
 
-    if(!$this.hasClass('95-pecent')){
-      $("#aside").animate({left: '-285px'}, 300);
-      $("#aside").hide(200);
-      $this.addClass('95-pecent').css({width: '95%'});
+    if ($(window).width() >= 768) {
+      if(!$this.hasClass('95-pecent')){
+        $this.addClass('95-pecent').css({width: '95%'});
+        $("#aside").animate({left: '-285px'}, 2000);
+        $("#aside").hide(2000);
 
+      } else {
+        $this.removeClass('95-pecent').css({width: '82%'});
+        $("#aside").show();
+        $("#aside").animate({left: '0px'}, 1000);
+      }
     } else {
-      $this.removeClass('95-pecent').css({width: '82%'});
-      $("#aside").show();
-      $("#aside").animate({left: '0px'}, 1000);
+      if(!$aside.hasClass('sidebar-on')){
+        $aside.addClass('sidebar-on');
+        $aside.animate({left: '0px'}, 1000);
+        if ($(window).width() >= 340) {
+          $("#button-menu").animate({left: '305px'}, 1000);
+        } else {
+          $("#button-menu").animate({left: '275px'}, 1000);
+        }
+
+      } else {
+        $aside.removeClass('sidebar-on');
+        $aside.animate({left: '-295px'}, 1000);
+        $("#button-menu").animate({left: '10px'}, 1000);
+      }
     }
   });
 

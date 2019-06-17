@@ -4432,11 +4432,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
 
 .aside {
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #f5f6f7;
-  width: 285px; }
+  width: 285px;
+  z-index: 200; }
 
 .menu-swich {
   width: 5%; }
@@ -4631,10 +4629,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 42px;
   color: #609cf5;
   padding: 15px; }
+  .footer-info-icon i::before {
+    display: block;
+    min-width: 53px;
+    text-align: center; }
 
 .footer-info-content {
   padding-left: 15px;
-  padding-bottom: 30px; }
+  padding-bottom: 40px; }
   .footer-info-content span {
     display: block;
     padding-bottom: 22px;
@@ -4657,8 +4659,63 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .posts-items .post-item:nth-child(odd) {
     padding-left: 0;
+    padding-right: 0;
     border-right: none; }
+  .posts-items .post-item:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0; }
   .aside {
-    display: none; }
+    width: 295px;
+    position: fixed;
+    top: 0px;
+    left: -295px;
+    z-index: 200;
+    overflow-y: scroll;
+    height: 100%; }
+    .aside::-webkit-scrollbar-button {
+      background-image: url("");
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 0px; }
+    .aside::-webkit-scrollbar-track {
+      background-color: #fefefe; }
+    .aside::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      background-color: silver;
+      box-shadow: 0px 1px 1px #fff inset;
+      background-image: url("https://yraaa.ru/_pu/24/59610063.png");
+      background-position: center;
+      background-repeat: no-repeat; }
+    .aside::-webkit-resizer {
+      background-image: url("");
+      background-repeat: no-repeat;
+      width: 7px;
+      height: 0px; }
+    .aside::-webkit-scrollbar {
+      width: 7px; }
+  .scroll {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 50px; }
   .main {
-    width: 95%; } }
+    width: 95%;
+    z-index: 0; }
+  .menu-swich {
+    width: 50px; }
+  .button-menu {
+    border-radius: 7px;
+    position: fixed;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+    z-index: 300;
+    background: rgba(205, 205, 205, 0.75); } }
+
+@media (max-width: 450px) {
+  .menu-swich {
+    width: 0px; }
+  .main {
+    width: 100%;
+    z-index: 0; } }
