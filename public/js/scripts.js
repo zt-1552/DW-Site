@@ -7,14 +7,14 @@
 
     if ($(window).width() >= 768) {
       if(!$this.hasClass('95-pecent')){
-        $this.addClass('95-pecent').css({width: '95%'});
-        $("#aside").animate({left: '-285px'}, 500);
-        $("#aside").hide(500);
+        $this.addClass('95-pecent');
+        $("#aside").animate({left: '-285px'}, 300);
+        $("#aside").hide(300);
 
       } else {
-        $this.removeClass('95-pecent').css({width: '82%'});
-        $("#aside").show(600);
-        $("#aside").animate({left: '0px'}, 1000);
+        $this.removeClass('95-pecent');
+        $("#aside").show(300);
+        $("#aside").animate({left: '0px'}, 300);
       }
     } else {
       if(!$aside.hasClass('sidebar-on')){
